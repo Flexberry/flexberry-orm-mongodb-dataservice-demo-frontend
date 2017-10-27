@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Reg object",
+  "name": "NewPlatformFlexberryOrmMongoDbDataServiceDemoRegObjectE",
+  "className": "RegObjectE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "reg-object",
+      "modelProjection": "RegObjectE"
+    }
+  ]
+}

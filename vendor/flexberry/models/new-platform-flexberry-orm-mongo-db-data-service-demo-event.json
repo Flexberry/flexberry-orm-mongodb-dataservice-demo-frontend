@@ -1,0 +1,429 @@
+﻿{
+  "name": "NewPlatformFlexberryOrmMongoDbDataServiceDemoEvent",
+  "modelName": "new-platform-flexberry-orm-mongo-db-data-service-demo-event",
+  "className": "Event",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "typeid",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "photo_id",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "timestamp",
+      "type": "number",
+      "flexberryType": "long",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "datetime",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "object_id",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "camera_direction_id",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "camera_id",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "grz",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "speed",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "year",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "month",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "day",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "hour",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "min",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "sec",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "regObject",
+      "relatedTo": "reg-object",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "camera",
+      "relatedTo": "camera",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "EventE",
+      "modelName": "new-platform-flexberry-orm-mongo-db-data-service-demo-event",
+      "attrs": [
+        {
+          "name": "typeid",
+          "caption": "Typeid",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "photo_id",
+          "caption": "Photo_id",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "timestamp",
+          "caption": "Timestamp",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "datetime",
+          "caption": "Datetime",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "object_id",
+          "caption": "Object_id",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "camera_direction_id",
+          "caption": "Camera_direction_id",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "camera_id",
+          "caption": "Camera_id",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "grz",
+          "caption": "Grz",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "speed",
+          "caption": "Speed",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "year",
+          "caption": "Year",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "month",
+          "caption": "Month",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "day",
+          "caption": "Day",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "hour",
+          "caption": "Hour",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "min",
+          "caption": "Min",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "sec",
+          "caption": "Sec",
+          "hidden": false,
+          "index": 14
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "RegObject",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "town",
+              "caption": "Town",
+              "hidden": false,
+              "index": 16
+            }
+          ],
+          "index": 15,
+          "caption": "Reg object",
+          "name": "regObject",
+          "relatedTo": "reg-object",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Camera",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "cameraId",
+              "caption": "Camera id",
+              "hidden": false,
+              "index": 18
+            }
+          ],
+          "index": 17,
+          "caption": "Camera",
+          "name": "camera",
+          "relatedTo": "camera",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "EventL",
+      "modelName": "new-platform-flexberry-orm-mongo-db-data-service-demo-event",
+      "attrs": [
+        {
+          "name": "typeid",
+          "caption": "Typeid",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "photo_id",
+          "caption": "Photo_id",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "timestamp",
+          "caption": "Timestamp",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "datetime",
+          "caption": "Datetime",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "object_id",
+          "caption": "Object_id",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "camera_direction_id",
+          "caption": "Camera_direction_id",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "camera_id",
+          "caption": "Camera_id",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "grz",
+          "caption": "Grz",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "speed",
+          "caption": "Speed",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "year",
+          "caption": "Year",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "month",
+          "caption": "Month",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "day",
+          "caption": "Day",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "hour",
+          "caption": "Hour",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "min",
+          "caption": "Min",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "sec",
+          "caption": "Sec",
+          "hidden": false,
+          "index": 14
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "RegObject",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "town",
+              "caption": "Town",
+              "hidden": false,
+              "index": 15
+            }
+          ],
+          "index": -1,
+          "caption": "Town",
+          "name": "regObject",
+          "relatedTo": "reg-object",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Camera",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "cameraId",
+              "caption": "Camera id",
+              "hidden": false,
+              "index": 16
+            }
+          ],
+          "index": -1,
+          "caption": "Camera id",
+          "name": "camera",
+          "relatedTo": "camera",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

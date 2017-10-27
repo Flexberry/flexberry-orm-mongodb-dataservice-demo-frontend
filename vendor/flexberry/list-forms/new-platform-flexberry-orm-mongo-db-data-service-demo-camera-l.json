@@ -1,0 +1,15 @@
+﻿{
+  "newForm": null,
+  "editForm": null,
+  "external": false,
+  "caption": null,
+  "name": "NewPlatformFlexberryOrmMongoDbDataServiceDemoCameraL",
+  "className": "CameraL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "camera",
+      "modelProjection": "CameraL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "new-platform-flexberry-orm-mongo-db-data-service-demo-reg-object-e",
+  "editForm": "new-platform-flexberry-orm-mongo-db-data-service-demo-reg-object-e",
+  "external": false,
+  "caption": "Reg object",
+  "name": "NewPlatformFlexberryOrmMongoDbDataServiceDemoRegObjectL",
+  "className": "RegObjectL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "reg-object",
+      "modelProjection": "RegObjectL"
+    }
+  ]
+}

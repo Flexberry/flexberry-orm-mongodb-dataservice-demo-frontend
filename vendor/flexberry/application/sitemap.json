@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Flexberry orm mongo db data service demo",
+  "applicationTitle": "Flexberry orm mongo db data service demo",
+  "items": [
+    {
+      "link": null,
+      "menuName": "flexberry-orm-mongo-db-data-service-demo",
+      "caption": "FlexberryOrmMongoDbDataServiceDemo",
+      "title": "FlexberryOrmMongoDbDataServiceDemo",
+      "children": [
+        {
+          "link": "new-platform-flexberry-orm-mongo-db-data-service-demo-reg-object-l",
+          "menuName": null,
+          "caption": "Reg object",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "new-platform-flexberry-orm-mongo-db-data-service-demo-event-l",
+          "menuName": null,
+          "caption": "Event",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,22 @@
+export default {
+  caption: 'NewPlatformFlexberryOrmMongoDbDataServiceDemoEventE',
+  'typeid-caption': 'typeid',
+  'photo_id-caption': 'photo_id',
+  'timestamp-caption': 'timestamp',
+  'datetime-caption': 'datetime',
+  'object_id-caption': 'object_id',
+  'camera_direction_id-caption': 'camera_direction_id',
+  'camera_id-caption': 'camera_id',
+  'grz-caption': 'grz',
+  'speed-caption': 'speed',
+  'year-caption': 'year',
+  'month-caption': 'month',
+  'day-caption': 'day',
+  'hour-caption': 'hour',
+  'min-caption': 'min',
+  'sec-caption': 'sec',
+  'regObject.town-caption': 'regObject.town',
+  'camera.cameraId-caption': 'camera.cameraId',
+  'regObject-caption': 'regObject',
+  'camera-caption': 'camera'
+};

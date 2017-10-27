@@ -1,0 +1,4 @@
+import NewPlatformFlexberryOrmMongoDbDataServiceDemoRegObjectEController from '../new-platform-flexberry-orm-mongo-db-data-service-demo-reg-object-e';
+
+var NewPlatformFlexberryOrmMongoDbDataServiceDemoRegObjectENewController = NewPlatformFlexberryOrmMongoDbDataServiceDemoRegObjectEController;
+export default NewPlatformFlexberryOrmMongoDbDataServiceDemoRegObjectENewController;

@@ -1,0 +1,226 @@
+﻿{
+  "name": "RegObject",
+  "modelName": "reg-object",
+  "className": "RegObject",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "objectId",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "town",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "objectName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "address",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "latitude",
+      "type": "number",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "longitude",
+      "type": "number",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "actual",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "createTime",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "editTime",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "cameras",
+      "relatedTo": "camera",
+      "inverse": "regObject"
+    }
+  ],
+  "projections": [
+    {
+      "name": "RegObjectE",
+      "modelName": "reg-object",
+      "attrs": [
+        {
+          "name": "objectId",
+          "caption": "Object id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "town",
+          "caption": "Town",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "objectName",
+          "caption": "Object name",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "latitude",
+          "caption": "Latitude",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "longitude",
+          "caption": "Longitude",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "actual",
+          "caption": "Actual",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "createTime",
+          "caption": "Create time",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "editTime",
+          "caption": "Edit time",
+          "hidden": false,
+          "index": 8
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "CameraE",
+          "caption": "Cameras",
+          "name": "cameras",
+          "relatedTo": "camera",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "RegObjectL",
+      "modelName": "reg-object",
+      "attrs": [
+        {
+          "name": "objectId",
+          "caption": "Object id",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "town",
+          "caption": "Town",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "objectName",
+          "caption": "Object name",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "latitude",
+          "caption": "Latitude",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "longitude",
+          "caption": "Longitude",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "actual",
+          "caption": "Actual",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "createTime",
+          "caption": "Create time",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "editTime",
+          "caption": "Edit time",
+          "hidden": false,
+          "index": 8
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

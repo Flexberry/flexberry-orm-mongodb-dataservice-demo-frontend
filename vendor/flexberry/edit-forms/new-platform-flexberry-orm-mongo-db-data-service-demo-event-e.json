@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "RegObject",
+      "projection": "RegObjectL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Camera",
+      "projection": "CameraL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Event",
+  "name": "NewPlatformFlexberryOrmMongoDbDataServiceDemoEventE",
+  "className": "EventE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-flexberry-orm-mongo-db-data-service-demo-event",
+      "modelProjection": "EventE"
+    }
+  ]
+}

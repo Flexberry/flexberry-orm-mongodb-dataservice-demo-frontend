@@ -1,0 +1,4 @@
+import NewPlatformFlexberryOrmMongoDbDataServiceDemoEventEController from '../new-platform-flexberry-orm-mongo-db-data-service-demo-event-e';
+
+var NewPlatformFlexberryOrmMongoDbDataServiceDemoEventENewController = NewPlatformFlexberryOrmMongoDbDataServiceDemoEventEController;
+export default NewPlatformFlexberryOrmMongoDbDataServiceDemoEventENewController;
