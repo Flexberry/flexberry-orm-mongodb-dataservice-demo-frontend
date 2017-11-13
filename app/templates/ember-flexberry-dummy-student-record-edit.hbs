@@ -1,0 +1,79 @@
+<h3 class="ui header">{{t 'forms.ember-flexberry-dummy-student-record-edit.caption'}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=model.errors}}
+    </div>
+  </div>
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button type="submit" class="ui button save-button" {{action 'save'}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button type="submit" class="ui button save-del-button" {{action 'delete'}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button type="submit" class="ui button close-button" {{action 'close'}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.srFIO
+    class=(if model.errors.srFIO 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-student-record-edit.srFIO-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.srFIO pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.srCours
+    class=(if model.errors.srCours 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-student-record-edit.srCours-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.srCours pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.uniquelD
+    class=(if model.errors.uniquelD 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-student-record-edit.uniquelD-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.uniquelD pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.objectPK
+    class=(if model.errors.objectPK 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-student-record-edit.objectPK-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.objectPK pointing="pointing"}}
+</div>
+
+</form>

@@ -1,0 +1,456 @@
+<h3 class="ui header">{{t 'forms.ember-flexberry-dummy-child-level2-edit.caption'}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=model.errors}}
+    </div>
+  </div>
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button type="submit" class="ui button save-button" {{action 'save'}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button type="submit" class="ui button save-del-button" {{action 'delete'}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button type="submit" class="ui button close-button" {{action 'close'}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.type.createTime-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder='(no value)'
+    readonly=true
+    value=model.type.createTime
+    class=(if model.errors.type.createTime 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.createTime pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.type.creator
+    class=(if model.errors.type.creator 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.type.creator-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.creator pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.type.editTime-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder='(no value)'
+    readonly=true
+    value=model.type.editTime
+    class=(if model.errors.type.editTime 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.editTime pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.type.editor
+    class=(if model.errors.type.editor 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.type.editor-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.editor pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.type.name
+    class=(if model.errors.type.name 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.type.name-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.name pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.type.moderated-caption'}}</label>
+  {{
+    flexberry-checkbox 
+    readonly=true 
+    value=model.type.moderated
+  }}
+  {{flexberry-validationmessage error=model.errors.type.moderated pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.createTime-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder='(no value)'
+    readonly=true
+    value=model.type.parent.createTime
+    class=(if model.errors.type.parent.createTime 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.createTime pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.type.parent.creator
+    class=(if model.errors.type.parent.creator 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.creator-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.creator pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.editTime-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder='(no value)'
+    readonly=true
+    value=model.type.parent.editTime
+    class=(if model.errors.type.parent.editTime 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.editTime pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.type.parent.editor
+    class=(if model.errors.type.parent.editor 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.editor-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.editor pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.type.parent.name
+    class=(if model.errors.type.parent.name 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.name-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.name pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.moderated-caption'}}</label>
+  {{
+    flexberry-checkbox 
+    readonly=true 
+    value=model.type.parent.moderated
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.moderated pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.parent.createTime-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder='(no value)'
+    readonly=true
+    value=model.type.parent.parent.createTime
+    class=(if model.errors.type.parent.parent.createTime 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.parent.createTime pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.type.parent.parent.creator
+    class=(if model.errors.type.parent.parent.creator 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.parent.creator-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.parent.creator pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.parent.editTime-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder='(no value)'
+    readonly=true
+    value=model.type.parent.parent.editTime
+    class=(if model.errors.type.parent.parent.editTime 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.parent.editTime pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.type.parent.parent.editor
+    class=(if model.errors.type.parent.parent.editor 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.parent.editor-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.parent.editor pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.type.parent.parent.name
+    class=(if model.errors.type.parent.parent.name 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.parent.name-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.parent.name pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.type.parent.parent.moderated-caption'}}</label>
+  {{
+    flexberry-checkbox 
+    readonly=true 
+    value=model.type.parent.parent.moderated
+  }}
+  {{flexberry-validationmessage error=model.errors.type.parent.parent.moderated pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.createTime-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder='(no value)'
+    readonly=true
+    value=model.editor1.createTime
+    class=(if model.errors.editor1.createTime 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.createTime pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.creator
+    class=(if model.errors.editor1.creator 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.creator-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.creator pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.editTime-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder='(no value)'
+    readonly=true
+    value=model.editor1.editTime
+    class=(if model.errors.editor1.editTime 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.editTime pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.editor
+    class=(if model.errors.editor1.editor 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.editor-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.editor pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.name
+    class=(if model.errors.editor1.name 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.name-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.name pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.eMail
+    class=(if model.errors.editor1.eMail 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.eMail-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.eMail pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.phone1
+    class=(if model.errors.editor1.phone1 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.phone1-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.phone1 pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.phone2
+    class=(if model.errors.editor1.phone2 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.phone2-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.phone2 pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.phone3
+    class=(if model.errors.editor1.phone3 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.phone3-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.phone3 pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.activated-caption'}}</label>
+  {{
+    flexberry-checkbox 
+    readonly=true 
+    value=model.editor1.activated
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.activated pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.vK
+    class=(if model.errors.editor1.vK 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.vK-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.vK pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.facebook
+    class=(if model.errors.editor1.facebook 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.facebook-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.facebook pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.twitter
+    class=(if model.errors.editor1.twitter 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.twitter-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.twitter pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.birthday-caption'}}</label>
+  {{
+    flexberry-datepicker
+    placeholder='(no value)'
+    readonly=true
+    value=model.editor1.birthday
+    class=(if model.errors.editor1.birthday 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.birthday pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.gender-caption'}}</label>
+  {{
+    flexberry-dropdown
+    items=(flexberry-enum 'ember-flexberry-dummy-gender')
+    value=model.editor1.gender
+    readonly=true
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.gender pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.vip-caption'}}</label>
+  {{
+    flexberry-checkbox 
+    readonly=true 
+    value=model.editor1.vip
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.vip pointing="pointing"}}
+</div>
+
+<div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=true
+    required=true
+    value=model.editor1.karma
+    class=(if model.errors.editor1.karma 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-child-level2-edit.editor1.karma-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.editor1.karma pointing="pointing"}}
+</div>
+
+</form>

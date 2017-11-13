@@ -4,7 +4,7 @@ import { Projection } from 'ember-flexberry-data';
 export let Model = Ember.Mixin.create({
   cameraId: DS.attr('number'),
   groupId: DS.attr('number'),
-  groupName: DS.attr('number'),
+  groupName: DS.attr('string'),
   actual: DS.attr('boolean'),
   createTime: DS.attr('date'),
   editTime: DS.attr('date'),

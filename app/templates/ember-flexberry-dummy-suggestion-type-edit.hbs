@@ -1,0 +1,81 @@
+<h3 class="ui header">{{t 'forms.ember-flexberry-dummy-suggestion-type-edit.caption'}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=model.errors}}
+    </div>
+  </div>
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button type="submit" class="ui button save-button" {{action 'save'}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button type="submit" class="ui button save-del-button" {{action 'delete'}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button type="submit" class="ui button close-button" {{action 'close'}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field">
+  {{
+    flexberry-field
+    placeholder=(t 'components.flexberry-field.placeholder')
+    readonly=readonly
+    required=true
+    value=model.name
+    class=(if model.errors.name 'error' '')
+    label=(t 'forms.ember-flexberry-dummy-suggestion-type-edit.name-caption')
+  }}
+  {{flexberry-validationmessage error=model.errors.name pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-suggestion-type-edit.moderated-caption'}}</label>
+  {{
+    flexberry-checkbox 
+    readonly=readonly 
+    value=model.moderated
+  }}
+  {{flexberry-validationmessage error=model.errors.moderated pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-suggestion-type-edit.parent-caption'}}</label>
+  {{
+    flexberry-lookup
+    choose='showLookupDialog'
+    remove='removeLookupValue'
+    value=model.parent
+    displayAttributeName='name'
+    relationName='parent'
+    projection='SuggestionTypeL'
+    title=(t 'forms.ember-flexberry-dummy-suggestion-type-edit.parent-caption')
+    readonly=readonly
+  }}
+  {{flexberry-validationmessage error=model.errors.parent pointing="pointing"}}
+</div>
+
+<div class="field">
+  <label>{{t 'forms.ember-flexberry-dummy-suggestion-type-edit.localizedTypes-caption'}}</label>
+  {{
+    flexberry-groupedit
+    componentName="localizedTypesGroupEdit"
+    mainModelProjection=modelProjection
+    modelProjection=modelProjection.attributes.localizedTypes
+    content=model.localizedTypes
+    readonly=readonly
+    orderable=false
+    class=(if model.errors.localizedTypes 'error' '')
+  }}
+  {{flexberry-validationmessage error=model.errors.localizedTypes pointing="pointing"}}
+</div>
+
+</form>

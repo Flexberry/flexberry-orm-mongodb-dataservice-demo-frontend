@@ -1,0 +1,4 @@
+import EmberFlexberryDummyLazyLoadingMasterEditController from '../ember-flexberry-dummy-lazy-loading-master-edit';
+
+var EmberFlexberryDummyLazyLoadingMasterEditNewController = EmberFlexberryDummyLazyLoadingMasterEditController;
+export default EmberFlexberryDummyLazyLoadingMasterEditNewController;

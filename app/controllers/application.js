@@ -16,14 +16,49 @@ export default Ember.Controller.extend({
           caption: i18n.t('forms.application.sitemap.flexberry-orm-mongo-db-data-service-demo.caption'),
           title: i18n.t('forms.application.sitemap.flexberry-orm-mongo-db-data-service-demo.title'),
           children: [{
-            link: 'new-platform-flexberry-orm-mongo-db-data-service-demo-reg-object-l',
-            caption: i18n.t('forms.application.sitemap.flexberry-orm-mongo-db-data-service-demo.new-platform-flexberry-orm-mongo-db-data-service-demo-reg-object-l.caption'),
-            title: i18n.t('forms.application.sitemap.flexberry-orm-mongo-db-data-service-demo.new-platform-flexberry-orm-mongo-db-data-service-demo-reg-object-l.title'),
+            link: 'reg-object-l',
+            caption: i18n.t('forms.application.sitemap.flexberry-orm-mongo-db-data-service-demo.reg-object-l.caption'),
+            title: i18n.t('forms.application.sitemap.flexberry-orm-mongo-db-data-service-demo.reg-object-l.title'),
             children: null
           }, {
-            link: 'new-platform-flexberry-orm-mongo-db-data-service-demo-event-l',
-            caption: i18n.t('forms.application.sitemap.flexberry-orm-mongo-db-data-service-demo.new-platform-flexberry-orm-mongo-db-data-service-demo-event-l.caption'),
-            title: i18n.t('forms.application.sitemap.flexberry-orm-mongo-db-data-service-demo.new-platform-flexberry-orm-mongo-db-data-service-demo-event-l.title'),
+            link: 'event-l',
+            caption: i18n.t('forms.application.sitemap.flexberry-orm-mongo-db-data-service-demo.event-l.caption'),
+            title: i18n.t('forms.application.sitemap.flexberry-orm-mongo-db-data-service-demo.event-l.title'),
+            children: null
+          }]
+        }, {
+          link: null,
+          caption: i18n.t('forms.application.sitemap.application.caption'),
+          title: i18n.t('forms.application.sitemap.application.title'),
+          children: [{
+            link: 'ember-flexberry-dummy-application-user-list',
+            caption: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-application-user-list.caption'),
+            title: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-application-user-list.title'),
+            children: null
+          }, {
+            link: 'ember-flexberry-dummy-localization-list',
+            caption: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-localization-list.caption'),
+            title: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-localization-list.title'),
+            children: null
+          }, {
+            link: 'ember-flexberry-dummy-suggestion-list',
+            caption: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-suggestion-list.caption'),
+            title: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-suggestion-list.title'),
+            children: null
+          }, {
+            link: 'ember-flexberry-dummy-suggestion-type-list',
+            caption: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-suggestion-type-list.caption'),
+            title: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-suggestion-type-list.title'),
+            children: null
+          }, {
+            link: 'ember-flexberry-dummy-test-poly-child-list',
+            caption: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-test-poly-child-list.caption'),
+            title: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-test-poly-child-list.title'),
+            children: null
+          }, {
+            link: 'ember-flexberry-dummy-test-poly-list',
+            caption: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-test-poly-list.caption'),
+            title: i18n.t('forms.application.sitemap.application.ember-flexberry-dummy-test-poly-list.title'),
             children: null
           }]
         }
