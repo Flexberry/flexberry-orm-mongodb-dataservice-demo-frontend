@@ -1,0 +1,66 @@
+﻿{
+  "name": "EmberFlexberryDummyStudyRecord",
+  "modelName": "ember-flexberry-dummy-study-record",
+  "className": "StudyRecord",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "uniquelD",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "objectPK",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true
+    },
+    {
+      "name": "showName",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "StudyRecordL",
+      "modelName": "ember-flexberry-dummy-study-record",
+      "attrs": [
+        {
+          "name": "uniquelD",
+          "caption": "",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "objectPK",
+          "caption": "",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "showName",
+          "caption": "",
+          "hidden": true,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": false,
+  "offline": true,
+  "external": false
+}

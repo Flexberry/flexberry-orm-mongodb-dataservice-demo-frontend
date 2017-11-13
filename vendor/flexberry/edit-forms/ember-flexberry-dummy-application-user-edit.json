@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Application user",
+  "name": "EmberFlexberryDummyApplicationUserEdit",
+  "className": "ApplicationUserEdit",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "ember-flexberry-dummy-application-user",
+      "modelProjection": "ApplicationUserE"
+    }
+  ]
+}

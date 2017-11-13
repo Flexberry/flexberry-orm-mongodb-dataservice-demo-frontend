@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": null,
+  "name": "EmberFlexberryDummyGraduateRecordEdit",
+  "className": "GraduateRecordEdit",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "ember-flexberry-dummy-graduate-record",
+      "modelProjection": "GraduateRecordE"
+    }
+  ]
+}
