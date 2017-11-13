@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "event-e",
+  "editForm": "event-e",
+  "external": false,
+  "caption": "Event",
+  "name": "EventL",
+  "className": "EventL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "event",
+      "modelProjection": "EventL"
+    }
+  ]
+}

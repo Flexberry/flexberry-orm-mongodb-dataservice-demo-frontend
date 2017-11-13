@@ -19,12 +19,12 @@
   ],
   "external": false,
   "caption": "Event",
-  "name": "NewPlatformFlexberryOrmMongoDbDataServiceDemoEventE",
+  "name": "EventE",
   "className": "EventE",
   "attrs": [],
   "projections": [
     {
-      "modelName": "new-platform-flexberry-orm-mongo-db-data-service-demo-event",
+      "modelName": "event",
       "modelProjection": "EventE"
     }
   ]

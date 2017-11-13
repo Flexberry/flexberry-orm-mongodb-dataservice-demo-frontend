@@ -1,6 +1,6 @@
 ﻿{
-  "name": "NewPlatformFlexberryOrmMongoDbDataServiceDemoEvent",
-  "modelName": "new-platform-flexberry-orm-mongo-db-data-service-demo-event",
+  "name": "Event",
+  "modelName": "event",
   "className": "Event",
   "parentModelName": null,
   "parentClassName": null,
@@ -146,7 +146,7 @@
   "projections": [
     {
       "name": "EventE",
-      "modelName": "new-platform-flexberry-orm-mongo-db-data-service-demo-event",
+      "modelName": "event",
       "attrs": [
         {
           "name": "typeid",
@@ -285,7 +285,7 @@
     },
     {
       "name": "EventL",
-      "modelName": "new-platform-flexberry-orm-mongo-db-data-service-demo-event",
+      "modelName": "event",
       "attrs": [
         {
           "name": "typeid",

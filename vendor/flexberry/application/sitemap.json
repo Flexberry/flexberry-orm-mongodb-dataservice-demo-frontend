@@ -9,14 +9,14 @@
       "title": "FlexberryOrmMongoDbDataServiceDemo",
       "children": [
         {
-          "link": "new-platform-flexberry-orm-mongo-db-data-service-demo-reg-object-l",
+          "link": "reg-object-l",
           "menuName": null,
           "caption": "Reg object",
           "title": "",
           "children": null
         },
         {
-          "link": "new-platform-flexberry-orm-mongo-db-data-service-demo-event-l",
+          "link": "event-l",
           "menuName": null,
           "caption": "Event",
           "title": "",

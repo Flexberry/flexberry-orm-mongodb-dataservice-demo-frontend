@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "reg-object-e",
+  "editForm": "reg-object-e",
+  "external": false,
+  "caption": "Reg object",
+  "name": "RegObjectL",
+  "className": "RegObjectL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "reg-object",
+      "modelProjection": "RegObjectL"
+    }
+  ]
+}
