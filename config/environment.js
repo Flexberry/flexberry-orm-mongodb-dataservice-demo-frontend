@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   // Replace this local address to remote when backed will be published.
-  var backendUrl = 'http://localhost:6500';
+  var backendUrl = 'https://flexberry-orm-mongodb-dataservice-demo.azurewebsites.net';
 
   if (environment === 'development-loc') {
     // Use `ember s -e development-loc` command for local backend usage.
@@ -33,7 +33,8 @@ module.exports = function(environment) {
       // It's a custom property, used to prevent duplicate backend urls in sources.
       backendUrls: {
         root: backendUrl,
-        api: backendUrl + '/odata'
+        api: backendUrl + '/odata',
+        bypassApi: backendUrl + '/bypass'
       },
 
       // Log service settings.
@@ -59,7 +60,7 @@ module.exports = function(environment) {
 
       // Lock settings.
      lock: {
-        enabled: true,
+        enabled: false,
         openReadOnly: true,
         unlockObject: true,
       },
